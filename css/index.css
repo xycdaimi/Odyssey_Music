@@ -1,0 +1,132 @@
+
+.banners li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* 外层盒子样式,左右箭头和小圆点都要采用绝对定位，所以其父盒子要采用相对定位*/
+.banners {
+    position: relative;
+    overflow: hidden;
+    width: 1050px;
+    height: 430px;
+    margin: 100px auto;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/*滚动区 包裹所有图片的盒子 宽度要足够宽可以放下所有的图片*/
+.images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900%;
+    margin: 0;
+    padding: 0;
+}
+/* 对图片使用浮动 使其排列在一行*/
+.images li{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+/* 图片大小会撑大盒子,设置图片大小 */
+.banners img {
+    margin: 0;
+    padding: 0;
+    width: 1050px;
+    height: 430px;
+}
+/*左右箭头相同样式*/
+.prev,
+.next {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;  
+    /* 绝对定位的盒子垂直居中 */
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    background: rgba(0,0,0, .3);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none; 
+}
+/*左箭头靠左定位*/
+.prev {
+    margin: 0;
+    padding: 0;
+    left: 0;
+     /* 设置圆角 */
+     border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/*右箭头靠右定位*/
+.next {
+    margin: 0;
+    padding: 0;
+    right: 0;
+    /* 设置圆角 */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+/* 小圆点外层盒子的样式 */
+.dots {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -35px;
+    height: 13px;
+    background:rgba(255,255,255, .3);
+    border-radius:7px;
+}
+/* 小圆点样式*/
+.dots li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+/* 小圆点被点击的样式 */
+.dots .active {
+    background-color: #ff5000;
+}
+.box ul li{
+    font-family: '黑体';
+    font-size: 25px;
+}
+.box ul li a{
+    float: right;
+    font-size: 2;
+    color: #ff5000;
+}
+.xian{
+    width: 1000px;
+    height: 40px;
+    border-bottom: 3px red solid;
+    list-style-image:url("./imge/mark.jpg");
+
+}
+.zhuan1{
+    float: left;
+    width:200px;
+    height: 200px;
+    margin: 30px;
+    text-align: center;
+    font-family: "宋体";
+    font-size: 18px;
+}
+.gg{
+    width: 1000px;
+    height: 295px;
+    border-bottom: 3px red solid;
+}

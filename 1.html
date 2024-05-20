@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/yinyue.css">
+    <link rel="stylesheet" href="css/bofan.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/zong.js"></script>
+    <title>播放-奥德赛音乐</title>
+</head>
+<body>
+    
+    <div class="banner">
+        <div class="nav1">
+            <img src="imge/logo.png" alt="">
+            <h1><a href="/#">奥德赛音乐</a></h1>
+            <ul>
+                <li style="background-color: black;"><span><a href="#">发现音乐</a></span></li>
+                <li><span><a href="gerenzhuye.html">我的音乐</a></span></li>
+                <li><span><a href="#">商城</a></span></li>
+                <li><span><a href="#">下载客户端</a></span></li>
+                <li><span><a href="#">vip</a></span></li>
+            </ul>
+            <div class="nav1-1">
+                <span><a href="register.html">注册</a></span>
+                <span><a href="deng.html">登录</a></span>
+                <div class="search-box">
+                    <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
+                    <input class="search-btn" type='button' id='btn' value='&#xf002' />
+                </div>
+            </div>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><span><a href="index.html">首页</a></span></li>
+                <li><span><a href="gesou.html">歌手</a></span></li>
+                <li><span><a href="pai.html">排行榜</a></span></li>
+                <li><span><a href="gedan.html">歌单</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="box" style="height: 800px;">
+        <div class="box-1">
+            <div class="box-top">
+                <img id="tu" src="imge/ge1.png" alt="">
+                <div class="box-top-r">
+                    <div class="box-top-r-1"><strong><span>歌单</span></strong>
+                        <h3>我们应该时常仰望星空</h3>
+                    </div>
+                    <div class="box-top-r-2">
+                        <img src="imge/1(1).jpg" alt=""><a href="#">sacksan</a><p>2018-9-13 创建</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bia"><h2>歌曲列表</h2></div>
+            <div class="liebiao">
+                <ul id="ge">
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div id="player">
+        <!-- 歌曲信息模块 -->
+        <div id="player-content1">
+            <!-- 歌曲名 -->
+            <div class="music-name"></div>
+            <!-- 歌手名 -->
+            <div class="artist-name"></div>
+            <!-- 歌曲时间 -->
+            <div class="time">
+                <!-- 当前播放的时间 -->
+                <div class="current-time"></div>
+                <!-- 歌曲总时长 -->
+                <div class="total-time"></div>
+            </div>
+            <!-- 进度条 -->
+            <div id="s-area">
+                <!-- 鼠标移动到进度条上，显示的时间信息 -->
+                <div id="ins-time"></div>
+                <!-- 鼠标移动到进度条上，进度条变暗部分-->
+                <div id="s-hover"></div>
+                <!-- 表示当前歌曲播放进度的蓝色进度条 -->
+                <div id="seek-bar"></div>
+            </div>
+        </div>
+
+        <!-- 控制模块 -->
+        <div id="player-content2">
+            <!-- 左侧歌曲封面旋转模块 -->
+            <div class="music-imgs">
+                <!-- 封面图 -->
+                <div class="img"></div>
+                <!-- 歌曲缓冲时的提示文字 -->
+                <div id="buffer-box">缓冲…</div>
+            </div>
+            <!-- 右侧歌曲操作模块 -->
+            <div class="player-controls">
+                <!-- 上一首按钮 -->
+                <div class="btn prev iconfont">&#xe603;</div>
+                <!-- 暂停/播放 按钮 -->
+                <div class="btn play-pause icon-jiediankaishi iconfont"></div>
+                <!-- 下一首按钮 -->
+                <div class="btn next iconfont">&#xe602;</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bofanqi.js"></script>
+    <div class="foot">
+        <p class="cheng">祝你每天的生活都有好音乐与好心情相伴</p>
+        <p>奥德赛音乐由  谢宇宸  罗航   陈亮  张博晨</p>
+        <p>联合制作</p>
+    </div>
+    <!-- <script src="js/bofan.js"></script> -->
+    <script>
+	    var oInp = document.getElementById('inp');
+	    var oBtn = document.getElementById('btn');
+	    
+	    oBtn.onclick = function () {
+	        Search();
+	    }
+	
+	    document.onkeydown = function () {
+	        if (event.keyCode == 13) {
+	            Search();
+	        }
+	    }
+	
+	    function Search() {
+	        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+	        window.open(url);
+	    }
+	</script>
+</body>
+</html>

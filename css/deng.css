@@ -1,0 +1,60 @@
+*{
+	margin: 0 auto;
+}
+.yuan1{
+	background-color: rgba(255,255,255,0.2);
+	height: 550px;
+	width: 550px;
+	margin-top: 7%;
+	border-radius: 550px;
+	display: flex;
+	align-items: center;
+}
+.yuan2{
+	background-color: rgba(255,255,255,0.4);
+	height: 500px;
+	width: 500px;
+	border-radius: 500px;
+	display: flex;
+	align-items: center;
+}
+.yuan3{
+	background-color: rgba(255,255,255,0.6);
+	height: 450px;
+	width: 450px;
+	border-radius: 450px;
+	display: flex;
+}
+.yuan4{
+	background-color: rgba(255,255,255,0.8);
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	margin-top: 20px;
+	text-align: center;
+}
+.yuan4 h1{
+	font-family: "黑体";
+	margin-top: 33%;
+}
+.den{
+	position: absolute;
+	height: 450px;
+	width: 450px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	margin-top: 2%;
+}
+.den input{
+	height: 50px;
+	width: 310px;
+	border:  rgb(149, 147, 147);
+	background-color:rgb(201, 199, 199);
+	padding: 0;
+}
+a{
+    color: deepskyblue;
+    text-decoration: none;
+	float: left;
+}

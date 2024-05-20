@@ -1,0 +1,5 @@
+imge/ge1.png
+imge/bg1.jpg
+imge/bg2.jpg
+imge/bg.jpg
+imge/ge2.png

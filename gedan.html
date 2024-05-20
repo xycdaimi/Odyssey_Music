@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/yinyue.css">
+    <script src="js/zong.js"></script>
+    <title>歌单-奥德赛音乐</title>
+</head>
+<body>
+    <div id="t"><a href="javascript:;" onmouseover="xuanfu()" onmouseout="likai()" id="top"><img src="imge/top.png" alt="" id="toptop"><p>返回顶部</p></a></div>
+    <div class="banner">
+        <div class="nav1">
+            <img src="imge/logo.png" alt="">
+            <h1><a href="/#">奥德赛音乐</a></h1>
+            <ul>
+                <li style="background-color: black;"><span><a href="#">发现音乐</a></span></li>
+                <li><span><a href="gerenzhuye.html">我的音乐</a></span></li>
+                <li><span><a href="#">商城</a></span></li>
+                <li><span><a href="#">下载客户端</a></span></li>
+                <li><span><a href="#">vip</a></span></li>
+            </ul>
+            <div class="nav1-1">
+                <span><a href="register.html">注册</a></span>
+                <span><a href="deng.html">登录</a></span>
+                <div class="search-box">
+                    <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
+                    <input class="search-btn" type='button' id='btn' value='&#xf002' />
+                </div>
+            </div>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><span><a href="index.html">首页</a></span></li>
+                <li><span><a href="gesou.html">歌手</a></span></li>
+                <li><span><a href="pai.html">排行榜</a></span></li>
+                <li style="background-color: crimson;"><span><a href="gedan.html">歌单</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <ul>
+            <li class="xian"><strong>歌单</strong></li>
+        </ul>
+        <div class="zhuan1">
+        <a href="1.html"><img src="imge/ge1(1).png" alt="找不到图片"></a>
+        <a href="1.html">我们应该时常仰望星空</a>
+        </div>
+        <div class="zhuan1">
+        <a href="2.html"><img src="imge/ge2(1).png" alt="找不到图片"></a>
+        <a href="2.html">这些美好想分享给你听</a>
+        </div>
+        <div class="zhuan1">
+        <a href="3.html"><img src="imge/ge3(1).png" alt="找不到图片"></a>
+        <a href="3.html">要把生活过成诗</a>
+        </div>
+        <div class="zhuan1">
+        <a href="4.html"><img src="imge/ge4(1).png" alt="找不到图片"></a>
+        <a href="4.html">黄昏落日和歌曲是绝配哦</a>
+        </div>
+    </div>
+    <div class="foot">
+        <p class="cheng">祝你每天的生活都有好音乐与好心情相伴</p>
+        <p>奥德赛音乐由  谢宇宸  罗航   陈亮  张博晨</p>
+        <p>联合制作</p>
+    </div>
+    <script>
+	    var oInp = document.getElementById('inp');
+	    var oBtn = document.getElementById('btn');
+	
+	    oBtn.onclick = function () {
+	        Search();
+	    }
+	
+	    document.onkeydown = function () {
+	        if (event.keyCode == 13) {
+	            Search();
+	        }
+	    }
+	
+	    function Search() {
+	        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+	        window.open(url);
+	    }
+	</script>
+</body>
+</html>

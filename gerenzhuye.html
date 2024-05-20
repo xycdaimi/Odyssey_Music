@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/yinyue.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <title>我的音乐-奥德赛音乐</title>
+    <style type="text/css">
+	.box{
+		background-color: #ffffff;
+        overflow: hidden;
+	}
+    .left{
+    	float:left;
+    	width:250px;
+    	height: 700px;
+		background-color: rgba(235,235,235,0.5);
+    }
+    .right{
+    	float: left;
+    	width:690px;
+    	height: 700px;
+    	border-left: 1px black solid;
+    }
+    .re{
+    	width:1040px;
+    	height: 335px;
+    	background: url('imge/星空(1).jpg');
+    }
+    .ko{
+    	width:1040px;
+    	height:70px;
+    }
+    .border-radius{
+            width: 130px;
+            height: 130px;
+            border-radius: 130px;
+            background: url('imge/1\(1\).jpg') no-repeat center center;
+            margin: 0 auto;
+            border:5px solid rgba(255,255,255,0.4);
+        }
+    .text{
+    	margin-top:20px;
+    	text-align: center;
+    	color: white;
+    }
+	.left a{
+		color:black;
+	}
+    .left tr{
+    	width: 200px;
+    	height: 40px;
+    	
+    }
+    .left table td:hover{
+        background: rgb(220,220,220);
+    }
+	.right table td:hover{
+	    background: rgb(220,220,220);
+	}
+	.right table td{
+		width: 680px;
+		height: 30px;
+	}
+	.right table tr td :first-child{
+		float: left;
+		margin-left: 30px;
+	}
+	.right table tr td span:last-child{
+		float: right;
+		margin-right: 30px;
+	}
+	.right table tr td span{
+		font-family: "宋体"; 
+	}
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="nav1">
+            <img src="imge/logo.png" alt="">
+            <h1><a href="/#">奥德赛音乐</a></h1>
+            <ul>
+                <li><span><a href="index.html">发现音乐</a></span></li>
+                <li style="background-color: black;"><span><a href="/#">我的音乐</a></span></li>
+                <li><span><a href="#">商城</a></span></li>
+                <li><span><a href="#">下载客户端</a></span></li>
+                <li><span><a href="#">vip</a></span></li>
+            </ul>
+            <div class="nav1-1">
+                <span><a href="register.html">注册</a></span>
+                <span><a href="deng.html">登录</a></span>
+                <div class="search-box">
+                    <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
+                    <input class="search-btn" type='button' id='btn' value='&#xf002' />
+                </div>
+            </div>
+        </div>
+        <div class="nav2" style="display: none;">
+            <ul>
+                <li><span><a href="index.html">首页</a></span></li>
+                <li  style="background-color: crimson;"><span><a href="gesou.html">歌手</a></span></li>
+                <li><span><a href="pai.html">排行榜</a></span></li>
+                <li><span><a href="gedan.html">歌单</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+    	<div class="re">
+    	<div class="ko"></div>
+    		<div class="border-radius"></div>
+    		<div class="text"><p>奥德赛</p></br><p>关注 0 | 粉丝 0</p></div>
+    	</div>
+    	<div class="left">
+    	<table>
+    	<tr><th>我收藏的歌单</th></tr>
+    	<tr><td  style="background-color: gray;"><a herf='#'>我的喜欢</a></td></tr>
+    	<tr><td>夏日的温暖</td></tr>
+    	<tr><th>我创建的歌单</th></tr>
+    	<tr><td>快乐永不停歇</td></tr>
+    	<tr><td>无限的单曲循环</td></tr>
+    	</table>
+    	</div>
+		<div class="right">
+			<table id="tab">
+				<tr><th>音乐列表</th></tr>
+				<tr><td><span>江南</span><span>林俊杰</span></td></tr>
+				<tr><td><span>半岛铁盒</span><span>周杰伦</span></td></tr>
+				<tr><td><span>晴天</span><span>周杰伦</span></td></tr>
+				<tr><td><span>长生诀</span><span>西瓜JUN</span></td></tr>
+				<tr><td><span>七里香</span><span>周杰伦</span></td></tr>
+			</table>
+		</div>
+		<table>
+			
+		</table>
+    </div>
+	<div id="player">
+        <!-- 歌曲信息模块 -->
+        <div id="player-content1">
+            <!-- 歌曲名 -->
+            <div class="music-name"></div>
+            <!-- 歌手名 -->
+            <div class="artist-name"></div>
+            <!-- 歌曲时间 -->
+            <div class="time">
+                <!-- 当前播放的时间 -->
+                <div class="current-time"></div>
+                <!-- 歌曲总时长 -->
+                <div class="total-time"></div>
+            </div>
+            <!-- 进度条 -->
+            <div id="s-area">
+                <!-- 鼠标移动到进度条上，显示的时间信息 -->
+                <div id="ins-time"></div>
+                <!-- 鼠标移动到进度条上，进度条变暗部分-->
+                <div id="s-hover"></div>
+                <!-- 表示当前歌曲播放进度的蓝色进度条 -->
+                <div id="seek-bar"></div>
+            </div>
+        </div>
+
+        <!-- 控制模块 -->
+        <div id="player-content2">
+            <!-- 左侧歌曲封面旋转模块 -->
+            <div class="music-imgs">
+                <!-- 封面图 -->
+                <div class="img"></div>
+                <!-- 歌曲缓冲时的提示文字 -->
+                <div id="buffer-box">缓冲…</div>
+            </div>
+            <!-- 右侧歌曲操作模块 -->
+            <div class="player-controls">
+                <!-- 上一首按钮 -->
+                <div class="btn prev iconfont">&#xe603;</div>
+                <!-- 暂停/播放 按钮 -->
+                <div class="btn play-pause icon-jiediankaishi iconfont"></div>
+                <!-- 下一首按钮 -->
+                <div class="btn next iconfont">&#xe602;</div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <p class="cheng">祝你每天的生活都有好音乐与好心情相伴</p>
+        <p>奥德赛音乐由  谢宇宸  罗航   陈亮  张博晨</p>
+        <p>联合制作</p>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bofan.js"></script>
+    <script>
+	    var oInp = document.getElementById('inp');
+	    var oBtn = document.getElementById('btn');
+	
+	    oBtn.onclick = function () {
+	        Search();
+	    }
+	
+	    document.onkeydown = function () {
+	        if (event.keyCode == 13) {
+	            Search();
+	        }
+	    }
+	
+	    function Search() {
+	        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+	        window.open(url);
+	    }
+	</script>
+</body>
+</html>
